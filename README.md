@@ -2,8 +2,7 @@
 
 An autonomous Applicant Tracking System (ATS) workflow built with **n8n**, **Google Gemini**, and **Pinecone**. This agent automates the entire recruitment funnel: sourcing, screening (RAG), scoring, and scheduling.
 
-<img width="1717" height="532" alt="image" src="https://github.com/user-attachments/assets/ff81b116-059e-42a4-98d4-73e96cda37eb" />
-
+<img width="1717" height="532" alt="Workflow Overview" src="https://github.com/user-attachments/assets/ff81b116-059e-42a4-98d4-73e96cda37eb" />
 
 ## 🚀 Features
 
@@ -14,25 +13,22 @@ An autonomous Applicant Tracking System (ATS) workflow built with **n8n**, **Goo
 - **Automated Logic:**
   - **Pass (>75/100):** Sends an interview invitation with a generic calendar link.
   - **Fail (<75/100):** Sends a polite rejection email and archives the profile.
-  - 
 
 ## 📦 How to Use
-[AI Smart Recruiter.json](https://github.com/user-attachments/files/24028425/AI.Smart.Recruiter.json)
 
+### 1. Import the Workflow
+- Download the **[AI Smart Recruiter.json](https://github.com/user-attachments/files/24028425/AI.Smart.Recruiter.json)** file.
+- In your n8n instance, go to **Workflows** > **Import from File** and select the file you just downloaded.
 
-1. **Import the Workflow:**
-   - Download the `` file from this repository.
-   - In your n8n instance, go to **Workflows** > **Import from File**.
+### 2. Configure Credentials
+You will need to set up the following credentials in n8n (the nodes will appear red until configured):
+- **Gmail OAuth2** (for reading emails and sending replies).
+- **Pinecone API** (for vector storage).
+- **Google Gemini API** (for the AI Agent).
 
-2. **Configure Credentials:**
-   You will need to set up the following credentials in n8n:
-   - **Gmail OAuth2** (for reading emails and sending replies).
-   - **Pinecone API** (for vector storage).
-   - **Google Gemini API** (for the AI Agent).
-
-3. **Customize the Prompt:**
-   - Open the **AI Agent Node**.
-   - Edit the System Prompt to fit your specific Job Description or connect it to a Google Doc for dynamic job offers.
+### 3. Customize the Prompt
+- Open the **AI Agent Node**.
+- Edit the System Prompt to fit your specific Job Description (JD) or connect it to a Google Doc node for dynamic job offers.
 
 ## 📄 License
 
