@@ -2,7 +2,8 @@
 
 An autonomous Applicant Tracking System (ATS) workflow built with **n8n**, **Google Gemini**, and **Pinecone**. This agent automates the entire recruitment funnel: sourcing, screening (RAG), scoring, and scheduling.
 
-<img width="1717" height="532" alt="Workflow Overview" src="https://github.com/user-attachments/assets/ff81b116-059e-42a4-98d4-73e96cda37eb" />
+<img width="1526" height="440" alt="image" src="https://github.com/user-attachments/assets/f4c342b2-2a72-4f09-b08f-4b0ee6c748c9" />
+
 
 ## 🚀 Features
 
